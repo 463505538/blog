@@ -20,13 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9351c623-da38-48b2-a5ca-d2489502f1ad" name="Default Changelist" comment="feat:新增admin后台功能">
-      <change beforePath="$PROJECT_DIR$/typeidea/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/blog/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/typeidea/typeidea/themes/default/templates/blog/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/typeidea/typeidea/themes/default/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/typeidea/typeidea/themes/default/templates/config/blocks/sidebar_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/typeidea/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeidea/comment/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/comment/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeidea/config/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/config/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeidea/config/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/config/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeidea/config/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/config/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/typeidea/typeidea/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/typeidea/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeidea/typeidea/templates/blog/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeidea/typeidea/templates/blog/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeidea/typeidea/templates/config/blocks/side_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/typeidea/themes/default/templates/config/blocks/side_comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeidea/typeidea/templates/config/blocks/sidebar_posts.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/typeidea/typeidea/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeidea/typeidea/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +63,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\blog\typeidea\typeidea\themes\bootstrap" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\blog\typeidea\typeidea\themes\default" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -70,8 +85,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597054848315</updated>
+      <workItem from="1598266554618" duration="4429000" />
+      <workItem from="1598410563058" duration="4060000" />
+      <workItem from="1598438197601" duration="5672000" />
+      <workItem from="1598490283001" duration="1301000" />
+      <workItem from="1598495388256" duration="594000" />
+      <workItem from="1598505013241" duration="620000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -99,11 +123,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="221" key="RollbackChangesDialog/0.0.1920.1040/1920.-75.1920.1040@0.0.1920.1040" timestamp="1597746756792" />
-    <state x="2543" y="150" width="672" height="678" key="search.everywhere.popup" timestamp="1597922686443">
+    <state x="2543" y="150" width="672" height="678" key="search.everywhere.popup" timestamp="1598440544783">
       <screen x="1920" y="-75" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-75.1920.1040@0.0.1920.1040" timestamp="1597748793678" />
-    <state x="2543" y="150" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-75.1920.1040@1920.-75.1920.1040" timestamp="1597922686443" />
+    <state x="2543" y="150" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-75.1920.1040@1920.-75.1920.1040" timestamp="1598440544783" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.132.1920.1040@0.0.1920.1040" timestamp="1597230383545" />
   </component>
 </project>
