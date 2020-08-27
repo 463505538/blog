@@ -4,14 +4,15 @@
 
 {% block main %}
 {% if post %}
-<h1>{{ post.title }}</h1>
-<div>
-    <span>分类:{{ post.category.name }}</span>
-    <span>作者:{{ post.owner.username }}</span>
-</div>
-<hr/>
-<p>
-    {{ post.content }}
-</p>
+    <div class="card post">
+        <div class="card-body">
+            <h5 class="card-title"><a href="#">{{ post.title }}</a></h5>
+            <span class="card-link">作者:<a href="{% url 'author' post.owner.id %}">{{ post.owner.username }}</a></span>
+            <span class="card-link">分类:<a href="{% url 'category-list' post.category.id %}">{{ post.category.name }}</a></span>
+            <span class="card-link">创建时间:<a href="#">{{ post.created_time }}</a></span>
+            <hr/>
+            <p class="card-text">{{ post.content }}</p>
+        </div>
+    </div>
 {% endif %}
 {% endblock %}
