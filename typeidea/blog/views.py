@@ -1,3 +1,6 @@
+from datetime import date
+
+from django.core.cache import cache
 from django.db.models import Q, F
 from django.shortcuts import get_object_or_404
 from django.views.generic import DetailView, ListView
@@ -25,11 +28,29 @@ class PostDetailView(CommonViewMixin, DetailView):
 
     def get(self, request, *args, **kwargs):
         response = super().get(request, *args, **kwargs)
-        Post.objects.filter(pk=self.object.id).update(pv=F('pv') + 1, uv=F('uv') + 1)
-
-        from django.db import connection
-        print(connection.queries)
+        self.handle_visited()
         return response
+
+    def handle_visited(self):
+        increase_pv = False
+        increase_uv = False
+        uid = self.request.uid
+        pv_key = f'pv:{uid}:{self.request.path}'
+        uv_key = f'uv:{uid}:{str(date.today()):{self.request.path}}'
+        if not cache.get(pv_key):
+            increase_pv = True
+            cache.set(pv_key, 1, 1 * 60)  # 1分钟有效
+
+        if not cache.get(uv_key):
+            increase_uv = True
+            cache.set(uv_key, 1, 24 * 60 * 60)  # 24小时有效
+
+        if increase_uv and increase_pv:
+            Post.objects.filter(pk=self.object.id).update(pv=F('pv') + 1, uv=F('uv') + 1)
+        elif increase_pv:
+            Post.objects.filter(pk=self.object.id).update(pv=F('pv') + 1)
+        elif increase_uv:
+            Post.objects.filter(pk=self.object.id).update(pv=F('uv') + 1)
 
 
 class IndexView(CommonViewMixin, ListView):
